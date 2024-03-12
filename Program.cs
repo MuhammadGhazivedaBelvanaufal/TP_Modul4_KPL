@@ -16,5 +16,10 @@ internal class Program
         {
             Console.WriteLine("{0}: {1}", item.Key, item.Value);
         }
+
+        DoorMachine pintu = new DoorMachine();
+        pintu.BukaPintu();
+        pintu.KunciPintu();
+        // Tambahkan simulasi perubahan state lainnya sesuai kebutuhan
     }
 }

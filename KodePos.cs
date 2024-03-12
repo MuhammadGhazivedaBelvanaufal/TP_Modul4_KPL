@@ -42,4 +42,26 @@ namespace tpmodul4_1302220011
             return kodePos;
         }
     }
+    public class DoorMachine
+{
+    private enum State { Terkunci, Terbuka }
+    private State currentState;
+
+    public DoorMachine()
+    {
+        currentState = State.Terkunci;
+    }
+
+    public void KunciPintu()
+    {
+        currentState = State.Terkunci;
+        Console.WriteLine("Pintu terkunci");
+    }
+
+    public void BukaPintu()
+    {
+        currentState = State.Terbuka;
+        Console.WriteLine("Pintu tidak terkunci");
+    }
+}
 }
